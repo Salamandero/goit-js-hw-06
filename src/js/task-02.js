@@ -8,10 +8,13 @@ const ingredients = [
 ];
 
 const ingredientsEl = document.querySelector('#ingredients');
+// console.log('ingredients:', ingredientsEl);
+
 
 const elem = ingredients.map((el) => {
- const li = document.createElement('li');
+  const li = document.createElement('li');
   li.textContent = `${el}`;
-  #ingredients.append(li);
-})
+  li.className = 'item';
+  ingredientsEl.append(li);
+});
 
