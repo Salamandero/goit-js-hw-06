@@ -14,9 +14,8 @@ const ingredientsEl = document.querySelector('#ingredients');
 const elem = ingredients.map((el) => {
   const li = document.createElement('li');
   li.textContent = `${el}`;
-  li.className = 'item';
-  // li.classList.add("item");
-  
-  ingredientsEl.append(li);
-});
-
+  li.classList.add("item");
+  //  li.className = 'item';
+    return li;
+  });
+ingredientsEl.append(...elem);
